@@ -18,7 +18,7 @@ class CheckStyle extends Plugin
     protected function _execute()
     {
         $options = array(
-            'ignore'   => '*.js',
+            'ignore'   => '*.js,lib/',
             'standard' => __DIR__ . '/CodeSniffer/Standards/Magento',
         );
         $csResults = $this->_executePhpCommand($options);
